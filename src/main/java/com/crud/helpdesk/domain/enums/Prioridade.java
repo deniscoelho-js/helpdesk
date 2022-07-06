@@ -1,4 +1,4 @@
-package com.crud.helpdesk.domains.enums;
+package com.crud.helpdesk.domain.enums;
 
 public enum Prioridade {
 	BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTA(2, "ALTA");
