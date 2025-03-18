@@ -1,5 +1,6 @@
 package core.io.helpdesk.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import core.io.helpdesk.domain.enums.Perfil;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,6 +17,7 @@ import java.util.List;
 @Entity
 public class Cliente extends Pessoa{
 
+    @JsonIgnore
     @OneToMany(mappedBy = "cliente")
     private List<Chamado> chamados = new ArrayList<>();
 
